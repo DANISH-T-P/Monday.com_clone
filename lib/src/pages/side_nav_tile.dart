@@ -8,42 +8,59 @@ class SideNavTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-        child: ListView(
-          children: [
-            SizedBox(height: 10,),
-            GestureDetector(
-              child: Image.asset('assets/icons/dots-menu.png',height: 30,color: Colors.deepPurple),
-            ),
-            SizedBox(height: 15,),
-            GestureDetector(
-              child: Icon(Icons.notifications_none),
-            ),
-            SizedBox(height: 15,),
-            GestureDetector(
-              child: Icon(Icons.inbox_outlined),
-            ),
-            SizedBox(height: 15,),
-            GestureDetector(
-              child: Icon(Icons.calendar_today_outlined),
-            ),
-            SizedBox(height: 15,),
-            GestureDetector(
-              child: Icon(Icons.star_border_rounded),
-            ),
-            SizedBox(height: 15,),
-            GestureDetector(
-              child: Icon(Icons.contact_page_outlined),
-            ),
-            SizedBox(height: 15,),
-            GestureDetector(
-              child: Icon(Icons.search_rounded),
-            ),
-            SizedBox(height: 15,),
-            GestureDetector(
-              child: Icon(Icons.help_outline_rounded),
-            ),
-            SizedBox(height: 10,),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.only(left: 10,right: 10),
+          child: ListView(
+            children: [
+              SizedBox(height: 10,),
+              GestureDetector(
+                onTap: () {},
+                child: Container(
+                  height: 32,
+                  decoration: BoxDecoration(
+                    color:
+                    Colors.deepOrange.shade100,
+                    image: DecorationImage(
+                        image: AssetImage(
+                          'assets/logos/logo_2.png',
+                        ),fit: BoxFit.fill
+                    ),
+                    borderRadius:
+                    BorderRadius.circular(8),
+                  ),
+                ),
+              ),
+              SizedBox(height: 15,),
+              GestureDetector(
+                child: Icon(Icons.notifications_none,color: Colors.white,),
+              ),
+              SizedBox(height: 15,),
+              GestureDetector(
+                child: Icon(Icons.inbox_outlined,color: Colors.white,),
+              ),
+              SizedBox(height: 15,),
+              GestureDetector(
+                child: Icon(Icons.calendar_today_outlined,color: Colors.white,),
+              ),
+              SizedBox(height: 15,),
+              GestureDetector(
+                child: Icon(Icons.star_border_rounded,color: Colors.white,),
+              ),
+              SizedBox(height: 15,),
+              GestureDetector(
+                child: Icon(Icons.contact_page_outlined,color: Colors.white,),
+              ),
+              SizedBox(height: 15,),
+              GestureDetector(
+                child: Icon(Icons.search_rounded,color: Colors.white,),
+              ),
+              SizedBox(height: 15,),
+              GestureDetector(
+                child: Icon(Icons.help_outline_rounded,color: Colors.white,),
+              ),
+              SizedBox(height: 10,),
+            ],
+          ),
         )
     );
   }

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:wrike_clone/src/pages/home_page.dart';
-import 'package:wrike_clone/src/pages/monday_home.dart';
-import 'package:wrike_clone/src/pages/second_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -14,7 +12,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SecondPage(),
+      home: FirstPage(),
       debugShowCheckedModeBanner: false,
     );
   }

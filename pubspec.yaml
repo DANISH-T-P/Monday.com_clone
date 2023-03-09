@@ -36,6 +36,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   dependencies:
   google_fonts: ^4.0.3
+  flutter_neumorphic: ^3.2.0
+  hovering: ^1.0.4
 
 
 dev_dependencies:
@@ -66,6 +68,16 @@ flutter:
     - assets/logos/monday_logo-full-big.png
     - assets/icons/dots-menu.png
     - assets/images/quick_search_recent_board.png
+    - assets/icons/getting_started.png
+    - assets/icons/help_center.png
+    - assets/icons/webinar.png
+    - assets/images/bg_2.png
+    - assets/images/templates.png
+    - assets/logos/logo_2.png
+    - assets/logos/logo_1.png
+    - assets/icons/profile.png
+    - assets/icons/letter-m.png
+    - assets/icons/user.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
