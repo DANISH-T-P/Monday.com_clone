@@ -70,13 +70,13 @@ class HomeFirstView extends StatelessWidget {
                             padding:
                             const EdgeInsets.all(8.0),
                             child: Row(
-                              children: [
+                              children: const [
                                 Icon(Icons.web),
                                 SizedBox(
                                   width: 10,
                                 ),
                                 Text(
-                                  "your First board",
+                                  "Your first board",
                                   style: TextStyle(
                                     fontWeight:
                                     FontWeight.bold,
@@ -96,7 +96,7 @@ class HomeFirstView extends StatelessWidget {
                             padding: const EdgeInsets.only(
                                 top: 2, left: 8, bottom: 2),
                             child: Row(
-                              children: [
+                              children: const [
                                 Icon(
                                   Icons.crop_square_sharp,
                                   color: Colors.purple,
@@ -123,7 +123,7 @@ class HomeFirstView extends StatelessWidget {
                     ),
                     CircleAvatar(
                       minRadius: 10,
-                      child: Text("0"),
+                      child: Text("3"),
                     )
                   ],
                 ),
@@ -292,7 +292,7 @@ class HomeFirstView extends StatelessWidget {
                         ],
                       ),
                     ),
-                  )
+                  ),
                   // ListTile(title: Text('This is tile number 3')),
                 ],
               ),

@@ -38,6 +38,7 @@ dependencies:
   google_fonts: ^4.0.3
   flutter_neumorphic: ^3.2.0
   hovering: ^1.0.4
+  get: ^4.6.5
 
 
 dev_dependencies:
