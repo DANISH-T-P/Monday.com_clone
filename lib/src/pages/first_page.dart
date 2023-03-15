@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:wrike_clone/src/pages/home_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -143,11 +145,12 @@ class _FirstPageState extends State<FirstPage> {
                                   final isValiedForm =
                                   formKey.currentState!.validate();
                                   formKey2.currentState!.validate();
-                                  if (isValiedForm) {
-                                    Navigator.of(context).push(MaterialPageRoute(
-                                      builder: (context) => const HomePage(),
-                                    ));
-                                  }
+                                  if (isValiedForm) {Get.to(HomePage());}
+                                  // {
+                                  //   Navigator.of(context).push(MaterialPageRoute(
+                                  //     builder: (context) => const HomePage(),
+                                  //   ));
+                                  // }
                                 },
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
